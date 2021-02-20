@@ -51,7 +51,7 @@ class LanguagesController extends Controller
 
             // update the language
             if( !$request -> active ){
-                $request->request->add(['active' => '0']); // this to add value (0) to the active value in the request for checkBox ::: my own code
+                $request->request->add(['active' => '0']); // this to add value (0) to the active value in the request for checkBox
             }
 
             $language->update($request->except('_token'));
